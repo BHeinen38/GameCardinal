@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.example.gamecardinal"},{"l":"com.example.gamecardinal.api"},{"l":"com.example.gamecardinal.fragments"},{"l":"com.example.gamecardinal.model"},{"l":"com.example.gamecardinal.presenter"},{"l":"com.example.gamecardinal.view"}]

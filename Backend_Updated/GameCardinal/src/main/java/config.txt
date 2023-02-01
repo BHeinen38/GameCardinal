@@ -1,0 +1,3 @@
+sudo service mysql stop
+sudo mkdir /var/run/mysqld
+sudo chown mysql /var/run/mysqld

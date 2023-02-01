@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/LoginPage"
+        android:name="com.example.gamecardinal.LoginActivity"
+        android:label="Login Page"
+        tools:layout="@layout/activity_login">
+        <action
+            android:id="@+id/action_LoginPage_to_RegisterPage"
+            app:destination="@id/RegisterPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterPage"
+        android:name="com.example.gamecardinal.RegistrationActivity"
+        android:label="Registration Page"
+        tools:layout="@layout/activity_registration">
+    </fragment>
+
+    <fragment
+        android:id="@+id/MainPage"
+        android:name="com.example.gamecardinal.MainActivity"
+        android:label="Main Page"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_MainPage_to_ComposeMessagePage"
+            app:destination="@id/ComposeMessagePage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ComposeMessagePage"
+        android:name="com.example.gamecardinal.ComposeMessage"
+        android:label="Compose Message"
+        tools:layout="@layout/compose_message">
+    </fragment>
+</navigation>

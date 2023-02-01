@@ -1,0 +1,47 @@
+/build
+.cxx
+
+# built files
+*.apk
+*.ap_
+*.aab
+
+# dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local Configuration Files
+local.properties
+/local.properties
+
+# Windows Thumbnail DB
+Thumbs.db
+
+# OSX Store
+.DS_Store
+
+# Android Studio
+*.iml
+.idea
+.gradle
+build/
+.navigation
+captures/
+output.json
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/misc.xml
+/.idea/assetWizardSettings.xml
+
+# NDK
+obj/
+.externalNativeBuild

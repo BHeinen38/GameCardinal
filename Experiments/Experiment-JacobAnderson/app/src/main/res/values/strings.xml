@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Example Demos</string>
+    <string name="back_button">Back</string>
+    <string name="empty"> </string>
+    <string name="menu_ticTac">Tic-Tac-Toe</string>
+    <string name="menu_throw">Throw</string>
+    <string name="tic_X">X</string>
+    <string name="tic_O">O</string>
+</resources>

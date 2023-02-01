@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegistrationActivity">
+
+    <View
+        android:id="@+id/regis_logoView"
+        android:layout_width="291dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFDEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/regis_logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_logoView"
+        app:layout_constraintEnd_toEndOf="@+id/regis_logoView"
+        app:layout_constraintStart_toStartOf="@+id/regis_logoView"
+        app:layout_constraintTop_toTopOf="@+id/regis_logoView"
+        app:srcCompat="@drawable/logotouse"
+        android:contentDescription="@string/access_logo_desc" />
+
+    <View
+        android:id="@+id/regis_formView"
+        android:layout_width="330dp"
+        android:layout_height="390dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFDEB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regis_nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/regis_formView"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="@+id/regis_formView"
+        app:layout_constraintTop_toBottomOf="@+id/regis_logoImage"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="name" />
+
+    <TextView
+        android:id="@+id/regis_nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_prompt"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_nameInput"
+        app:layout_constraintEnd_toStartOf="@+id/regis_nameInput"
+        app:layout_constraintTop_toTopOf="@+id/regis_nameInput"
+        android:labelFor="@id/regis_nameInput" />
+
+    <EditText
+        android:id="@+id/regis_usernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/regis_nameInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regis_nameInput"
+        app:layout_constraintTop_toBottomOf="@+id/regis_nameInput"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="username" />
+
+    <TextView
+        android:id="@+id/regis_usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_prompt"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_usernameInput"
+        app:layout_constraintEnd_toStartOf="@+id/regis_usernameInput"
+        app:layout_constraintTop_toTopOf="@+id/regis_usernameInput"
+        android:labelFor="@id/regis_usernameInput" />
+
+    <EditText
+        android:id="@+id/regis_passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/regis_usernameInput"
+        app:layout_constraintStart_toStartOf="@+id/regis_usernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/regis_usernameInput"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="password" />
+
+    <TextView
+        android:id="@+id/regis_passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_prompt"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_passwordInput"
+        app:layout_constraintEnd_toStartOf="@+id/regis_passwordInput"
+        app:layout_constraintTop_toTopOf="@+id/regis_passwordInput"
+        android:labelFor="@id/regis_passwordInput" />
+
+    <EditText
+        android:id="@+id/regis_emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/regis_passwordInput"
+        app:layout_constraintStart_toStartOf="@+id/regis_passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/regis_passwordInput"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="emailAddress" />
+
+    <TextView
+        android:id="@+id/regis_emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_prompt"
+        android:textColor="#040101"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_emailInput"
+        app:layout_constraintEnd_toStartOf="@+id/regis_emailInput"
+        app:layout_constraintTop_toTopOf="@+id/regis_emailInput"
+        android:labelFor="@id/regis_emailInput" />
+
+    <EditText
+        android:id="@+id/regis_phoneInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/regis_emailInput"
+        app:layout_constraintStart_toStartOf="@+id/regis_emailInput"
+        app:layout_constraintTop_toBottomOf="@+id/regis_emailInput"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:autofillHints="phone" />
+
+    <TextView
+        android:id="@+id/regis_phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone #:"
+        android:textColor="#050404"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_phoneInput"
+        app:layout_constraintEnd_toStartOf="@+id/regis_phoneInput"
+        app:layout_constraintTop_toTopOf="@+id/regis_phoneInput" />
+
+    <ImageButton
+        android:id="@+id/regis_pfpButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_formView"
+        app:layout_constraintEnd_toEndOf="@+id/regis_formView"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="@+id/regis_formView"
+        app:layout_constraintTop_toBottomOf="@+id/regis_phoneInput"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@android:drawable/ic_menu_gallery"
+        android:contentDescription="@string/access_pfp_upload_desc"/>
+
+    <TextView
+        android:id="@+id/regis_pfpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pfp_prompt"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/regis_pfpButton"
+        app:layout_constraintEnd_toStartOf="@+id/regis_pfpButton"
+        app:layout_constraintTop_toTopOf="@+id/regis_pfpButton" />
+
+    <Button
+        android:id="@+id/regis_registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
